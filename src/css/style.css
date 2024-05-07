@@ -1,0 +1,59 @@
+body, html {
+    margin: 0;
+    padding: 0;
+
+    background-color: #181a1b;
+    width: 100svw;
+    height: 100%;
+    min-height: 100svh;
+
+    font-family: system-ui, -apple-system, var(--font-family), Roboto, sans-serif;
+    font-style: normal;
+    color: #000;
+
+    scroll-behavior: smooth;
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    z-index: 2;
+
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    gap: 24px;
+}
+
+#message{
+    text-align: center;
+
+    color: #FFFFFF;
+    font: 700 36px/100% var(--font-family);
+    text-shadow: 0 0 10px #ffffff;
+
+
+    pointer-events: none;
+}
+
+/*Mobile view*/
+@media (width <= 660px) {
+    body{
+        height: 100svh;
+        width: 100svw;
+    }
+    h1 {
+        font-size: 3.5em;
+        height: 30vh;
+    }
+    .content{
+        padding: 16px;
+    }
+    #message{
+        margin: 20px;
+    }
+}
